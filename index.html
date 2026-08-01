@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Balaji Safety Nets - Review</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 20px; background: #eef2f5; }
+    .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-width: 420px; margin: auto; }
+    h2 { color: #1a73e8; margin-bottom: 5px; }
+    p { color: #666; font-size: 14px; }
+    button { background: #1a73e8; color: white; border: none; padding: 16px 25px; font-size: 17px; border-radius: 10px; cursor: pointer; margin-top: 15px; width: 100%; font-weight: bold; transition: 0.2s;}
+    button:active { background: #1557b0; transform: scale(0.98); }
+    #review-text { font-style: italic; color: #333; background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px dashed #4285F4; text-align: left; line-height: 1.5; font-size: 15px; }
+    .stars { color: #f4c430; font-size: 24px; margin: 10px 0; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Shree Balaji Safety Nets ⭐</h2>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <p>Aapka review ready hai! Niche diye button par click karke direct post karein:</p>
+
+    <div id="review-text">Loading custom review...</div>
+
+    <!-- Copy & Redirect Button -->
+    <button onclick="copyAndPost()">Copy & Post on Google</button>
+  </div>
+
+  <script>
+    // 1. Aapke Local Keywords
+    const keywords = [
+      "Invisible Bird Net in Jodhpur",
+      "Best Pigeon Netting Service Jodhpur",
+      "Invisible Grill Installation Jodhpur",
+      "Balcony Safety Net Jodhpur",
+      "Bird Net Price in Jodhpur",
+      "Mosquito and Bird Netting Jodhpur",
+      "Pigeon Safety Net for Balcony Jodhpur",
+      "Anti Bird Net Dealers in Jodhpur",
+      "Balcony Protection Net Installation Jodhpur",
+      "Bird Proofing Solution Jodhpur",
+      "High Quality Safety Net Jodhpur",
+      "Best Invisible Grill Dealer Jodhpur",
+      "Children Safety Net Jodhpur",
+      "Nylon Bird Netting in Jodhpur",
+      "Residential Bird Netting Jodhpur",
+      "Balcony Mesh Fitting Jodhpur"
+    ];
+
+    // 2. Openers
+    const openers = [
+      "Extremely satisfied with the service!",
+      "Highly recommended for safety solutions.",
+      "Great experience with the team.",
+      "Very professional and fast fitting service.",
+      "Best service provider in Jodhpur for safety nets.",
+      "Awesome quality work and polite staff."
+    ];
+
+    // 3. Endings
+    const endings = [
+      "Pricing was very reasonable too.",
+      "Finishing is top notch, highly satisfied!",
+      "Will definitely recommend to friends and family.",
+      "Work was completed on time without any hassle.",
+      "Strong material used and neat installation.",
+      "100% worth the money spent."
+    ];
+
+    // Dynamic generator
+    const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    const generatedReview = `${getRandom(openers)} Got their ${getRandom(keywords)} done at my location. ${getRandom(endings)}`;
+
+    document.getElementById("review-text").innerText = `"${generatedReview}"`;
+
+    function copyAndPost() {
+      navigator.clipboard.writeText(generatedReview).then(() => {
+        alert("Review copied successfully! Simply PASTE in the Google Review box.");
+        
+        // Aapki Direct Place ID Added Here
+        window.location.href = "https://search.google.com/local/writereview?placeid=ChIJUX8EeZePQTkRsEBIL_UTcho";
+      });
+    }
+  </script>
+</body>
+</html>
